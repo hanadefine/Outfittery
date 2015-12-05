@@ -27,7 +27,7 @@ public class OutfitteryScreens {
 		}
 
 		
-		public final int timeOut = 70;
+		public final int timeOut = 10;
 
 		public WebElement findElement(By locator){
 			try {

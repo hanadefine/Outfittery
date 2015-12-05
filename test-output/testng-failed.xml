@@ -6,7 +6,7 @@
       <class name="Outfittery.web.helpers.HomeHelper">
         <methods>
           <include name="tearDown"/>
-          <include name="homelinks"/>
+          <include name="customerlogin"/>
         </methods>
       </class> <!-- Outfittery.web.helpers.HomeHelper -->
     </classes>

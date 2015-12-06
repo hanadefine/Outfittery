@@ -1,25 +1,13 @@
 package Outfittery.web.helpers;
 
 
-import org.junit.Assert; 
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.List;
-import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
@@ -28,11 +16,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import Outfittery.web.screens.HomePage;
 
 public class HomeHelper extends HomePage{
-static WebDriver driver = new FirefoxDriver();
+ WebDriver driver = null;
 
 HomePage hp;
 HomeHelper hh;
-String baseUrl = "https://www.outfittery.com/"; 
+//String baseUrl = "https://www.outfittery.com/"; 
 String expectedurl="https://www.outfittery.com/login/auth";
 String currenturl;
 String place1;
@@ -54,10 +42,11 @@ String d7="Schweiz";
 String d8="Österreich";
 String d9="Luxemburg";
 
-	public HomeHelper() 
+	public HomeHelper(WebDriver driver, String baseUrl) 
 	{
 	// TODO Auto-generated constructor stub
 	super(driver);
+	this.driver = driver;
     hp = new HomePage(driver);
     driver.get(baseUrl);
   
@@ -65,34 +54,33 @@ String d9="Luxemburg";
 	
 	
 
-	@Test(priority=0)
+
 	public  void profile() throws InterruptedException  
 	{
-	login();
+//	login();
 //	WebDriverWait wt=new WebDriverWait(driver, 30);
 //	 wt.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//*[@id='menuLoggedIn']")));
 	 Thread.sleep(10000);
 	
-		WebElement menu = driver.findElement(By.xpath("//*[@id='menuLoggedIn']"));
-		menu.click();
+//		WebElement menu = driver.findElement());
+	 	hp.findElement(hp.menu).click();
+		hp.findElement(hp.edit).click();
 	
-		WebElement edit = driver.findElement(By.xpath("//*[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[3]/a"));
-		edit.click();
 	/*
 	 * Test to toggle the Radio button for Mr and Ms	
 	 */
-		WebElement radio1 = driver.findElement(By.xpath("//*[@id='profileEdit-section']/section/div/div[2]/form[1]/div/div[1]/label[1]/input"));
-		WebElement radio2 = driver.findElement(By.xpath("//*[@id='profileEdit-section']/section/div/div[2]/form[1]/div/div[1]/label[2]/input"));
+		//WebElement radio1 = driver.findElement(By.xpath("//*[@id='profileEdit-section']/section/div/div[2]/form[1]/div/div[1]/label[1]/input"));
+		//WebElement radio2 = driver.findElement(By.xpath("//*[@id='profileEdit-section']/section/div/div[2]/form[1]/div/div[1]/label[2]/input"));
 		boolean b = false;
-		b= radio1.isSelected();
-		if(b=true){  radio2.click(); }
+		b= hp.findElement(hp.radio1).isSelected();
+		if(b=true){  hp.findElement(hp.radio2).click(); }
 		
-		else { radio2.click(); }
+		else { hp.findElement(hp.radio1).click(); }
 		 
 		/*
 		 * Test to check the clothing sized from drop down menus
 		 */	
-		WebElement ht = driver.findElement(By.xpath("//*[@id='heightInCm']"));
+//		WebElement ht = driver.findElement(By.xpath("//*[@id='heightInCm']"));
 		int i= (int) (Math.random()*69);
         Select selectByValue = new Select(driver.findElement(By.id("heightInCm")));
         selectByValue.selectByIndex(i);
@@ -178,16 +166,17 @@ String d9="Luxemburg";
 	 * Login method to help other method call login functionality directly
 	 */
 
-	public  void login()  
+	public  void login(String email, String password)  
 	{
-		WebElement customerlogin = driver.findElement(By.xpath("//*[@id='bs-example-navbar-collapse-1']/ul/li[1]/a"));
-		customerlogin.click();
-		WebElement email = driver.findElement(By.name("j_username"));
-		email.sendKeys("hanank1784@gmail.com");
-		WebElement password = driver.findElement(By.name("j_password"));
-		password.sendKeys("outfit");
-		WebElement loginbutton = driver.findElement(By.id("submit"));
-		loginbutton.click();
+		//WebElement customerlogin = driver.findElement(By.xpath("//*[@id='bs-example-navbar-collapse-1']/ul/li[1]/a"));
+		hp.findElement(hp.customerlogin).click();
+		//WebElement email = driver.findElement(By.name("j_username"));
+		
+		hp.findElement(hp.email).sendKeys(email);
+	//	WebElement password = driver.findElement(By.name("j_password"));
+		hp.findElement(hp.password).sendKeys(password);
+	//	WebElement loginbutton = driver.findElement(By.id("submit"));
+		hp.findElement(hp.submit).click();
 	
 		
 		

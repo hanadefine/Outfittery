@@ -1,23 +1,42 @@
 package UITestFramework;
 
 import java.io.File;
-import java.net.URL;
+import java.io.FileInputStream;
 import java.util.Properties;
 
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.BeforeTest;
+import org.apache.commons.configuration.PropertiesConfiguration;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.WebDriver;
 
 
 public class CreateSession  {
-	 
-	 public WebDriver driver = null;
-	 Properties prop = new Properties();	
-	 @BeforeTest
-	public void setUp() throws Exception {
-		 String baseUrl = "https://www.outfittery.com/"; 
+
 	
+	Properties configProp = new Properties();
+	FileInputStream configFis;
+	protected File file = new File("");
+	public WebDriver driver = null;
+	public PropertiesConfiguration mwNewFlowProperties;
+	// Properties prop = new Properties();	
+
+	@BeforeMethod(alwaysRun = true)
+	public void createSession() throws Exception {
+		propertiesFileLoad();
+		driver = new FirefoxDriver();
+	}
+	
+	
+	@AfterMethod(alwaysRun = true)
+	public void teardown(){
 		
-		
-}
+		System.out.println("Shutting down driver");
+		driver.quit();
+	}
+	
+	public void propertiesFileLoad() throws Exception{
+		mwNewFlowProperties = new PropertiesConfiguration(file.getAbsoluteFile()
+				+ "//src//config//config.properties");
+	}
 }

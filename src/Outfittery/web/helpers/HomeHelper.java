@@ -23,27 +23,6 @@ public class HomeHelper extends HomePage{
 
 HomePage hp;
 HomeHelper hh;
-//String baseUrl = "https://www.outfittery.com/"; 
-String expectedurl="https://www.outfittery.com/login/auth";
-String currenturl;
-String place1;
-String place2;
-String place3;
-String place4;
-String place5;
-String place6;
-String place7;
-String place8;
-String place9;
-String d1="Deutschland";
-String d2="Nederland";
-String d3="Sverige";
-String d4="Danmark";
-String d5="International";
-String d6="België";
-String d7="Schweiz";
-String d8="Österreich";
-String d9="Luxemburg";
 
 	public HomeHelper(WebDriver driver, String baseUrl) 
 	{
@@ -61,11 +40,23 @@ String d9="Luxemburg";
 		hp.findElement(hp.menu).click();
 		hp.waitForVisibility(hp.billing);
 		hp.findElement(hp.billing).click();
-		hp.waitForVisibility(hp.ordercall);
-		hp.findElement(hp.ordercall).click();
-		hp.findElement(hp.occasion).click();
-	
+		hp.findElement(hp.userwel).click();
+		hp.findElement(hp.myprofile).click();
+		hp.waitForVisibility(hp.welcome);
+		String wel = hp.findElement(hp.welcome).getText();
+		hp.verifyEquals(wel, "Welcome to your profile", "Verifying Profile page", false, false);		
 		
+		/*
+		 * Test for Profile page
+		 */
+	
+
+		int i= (int) (Math.random()*69);
+		hp.findElement(By.id("heightInCm")).click();
+        Select selectByValue = new Select(driver.findElement(By.id("heightInCm")));
+        
+        selectByValue.selectByIndex(i);
+        
 	}
 
 
@@ -86,7 +77,7 @@ String d9="Luxemburg";
 		if(b=true){  hp.findElement(hp.radio2).click(); }
 		
 		else { hp.findElement(hp.radio1).click(); }
-		 
+		
 		/*
 		 * Test to check the clothing sized from drop down menus
 		 */	

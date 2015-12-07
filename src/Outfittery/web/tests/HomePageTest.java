@@ -17,22 +17,21 @@ public class HomePageTest extends CreateSession{
 	
 	@BeforeMethod(alwaysRun = true)
 	public void instantiateHelpers(){
+		
 		email = mwNewFlowProperties.getString("email");
 		password = mwNewFlowProperties.getString("password");
 		baseUrl = mwNewFlowProperties.getString("baseUrl");
 		homeHelper = new HomeHelper(driver,baseUrl);
-	
+
 	}
-	
-	
-	
-	
+		
 	@Test(priority=0)
 	public void logintest() throws InterruptedException, TimeoutException
 	{
 		homeHelper.login(email, password);
 		homeHelper.oderWithoutCall();
 		//homeHelper.profile();
+		
 	}
 	
 	

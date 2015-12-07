@@ -25,8 +25,12 @@ public class HomePage extends OutfitteryScreens  {
 	public By billing = By.xpath("//*[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[4]/a");
 	public By ordercall=By.xpath("//*[@id='navbar']/div[2]/div[2]/ul/li[12]/a");
 	public By occasion = By.cssSelector("#maSlider > div > div.question.active > div:nth-child(4) > div > div.row.cat1Occasions > div:nth-child(3) > a > div.overlay.overlay-international");
-	
-	
-	
-	
+	public By nextbt1=By.xpath("//*[@id='maSlider']/div/div[1]/div[4]/div/div[5]/div[2]/input");
+	public By nextbt2=By.xpath("//*[@id='maSlider']/div/div[2]/div[4]/div/div[5]/div[2]/input");
+	public By cat=By.xpath("//*[@id='maSlider']/div/div[2]/div[4]/div/div[2]/div[4]/a/div[1]");
+	public By txt1=By.xpath("");
+	public By txt2=By.xpath("//*[@id='maSlider']/div/div[2]/div[4]/div/div[4]/div/textarea");
+	public By userwel=By.xpath("//*[@id='menuLoggedIn']");
+	public By myprofile=By.xpath("//*[@id='navbar']/div[1]/div/ul/li[3]/a/span");	
+	public By welcome=By.xpath("//*[@id=;profileEdit-section']/section/div/div[1]");
 }

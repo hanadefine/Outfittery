@@ -32,7 +32,8 @@ public class CreateSession  {
 	public void teardown(){
 		
 		System.out.println("Shutting down driver");
-		driver.quit();
+		
+		//driver.quit();
 	}
 	
 	public void propertiesFileLoad() throws Exception{

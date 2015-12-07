@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Outfittery.web.helpers.HomeHelper">
+      <class name="Outfittery.web.tests.HomePageTest">
         <methods>
-          <include name="profile"/>
+          <include name="instantiateHelpers"/>
+          <include name="logintest"/>
+          <include name="createSession"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- Outfittery.web.helpers.HomeHelper -->
+      </class> <!-- Outfittery.web.tests.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

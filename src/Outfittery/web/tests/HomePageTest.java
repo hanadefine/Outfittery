@@ -1,5 +1,7 @@
 package Outfittery.web.tests;
 
+import java.util.concurrent.TimeoutException;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -26,8 +28,13 @@ public class HomePageTest extends CreateSession{
 	
 	
 	@Test(priority=0)
-	public void logintest() throws InterruptedException{
+	public void logintest() throws InterruptedException, TimeoutException
+	{
 		homeHelper.login(email, password);
-		homeHelper.profile();
+		homeHelper.oderWithoutCall();
+		//homeHelper.profile();
 	}
+	
+	
+	
 }

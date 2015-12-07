@@ -2,12 +2,15 @@ package Outfittery.web.helpers;
 
 
 
+import java.util.concurrent.TimeoutException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 import org.openqa.selenium.support.ui.Select;
+
 
 
 
@@ -52,15 +55,24 @@ String d9="Luxemburg";
   
 	}
 	
-	
-
-
-	public  void profile() throws InterruptedException  
+	public void oderWithoutCall() throws TimeoutException 
 	{
-//	login();
-//	WebDriverWait wt=new WebDriverWait(driver, 30);
-//	 wt.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//*[@id='menuLoggedIn']")));
-	 Thread.sleep(10000);
+		hp.waitForVisibility(hp.menu);
+		hp.findElement(hp.menu).click();
+		hp.waitForVisibility(hp.billing);
+		hp.findElement(hp.billing).click();
+		hp.waitForVisibility(hp.ordercall);
+		hp.findElement(hp.ordercall).click();
+		hp.findElement(hp.occasion).click();
+	
+		
+	}
+
+
+	public  void profile() throws InterruptedException, TimeoutException  
+	{
+
+		hp.waitForVisibility(hp.menu);
 	
 //		WebElement menu = driver.findElement());
 	 	hp.findElement(hp.menu).click();
@@ -69,8 +81,6 @@ String d9="Luxemburg";
 	/*
 	 * Test to toggle the Radio button for Mr and Ms	
 	 */
-		//WebElement radio1 = driver.findElement(By.xpath("//*[@id='profileEdit-section']/section/div/div[2]/form[1]/div/div[1]/label[1]/input"));
-		//WebElement radio2 = driver.findElement(By.xpath("//*[@id='profileEdit-section']/section/div/div[2]/form[1]/div/div[1]/label[2]/input"));
 		boolean b = false;
 		b= hp.findElement(hp.radio1).isSelected();
 		if(b=true){  hp.findElement(hp.radio2).click(); }
@@ -85,8 +95,8 @@ String d9="Luxemburg";
         Select selectByValue = new Select(driver.findElement(By.id("heightInCm")));
         selectByValue.selectByIndex(i);
         
-    Thread.sleep(5000);
-//69
+   
+
     
 	
 	

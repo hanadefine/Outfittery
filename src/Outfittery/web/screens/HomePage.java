@@ -22,4 +22,11 @@ public class HomePage extends OutfitteryScreens  {
 	public By email = By.name("j_username");
 	public By password = By.name("j_password");
 	public By submit = By.id("submit");
+	public By billing = By.xpath("//*[@id='bs-example-navbar-collapse-1']/ul/li[2]/ul/li[4]/a");
+	public By ordercall=By.xpath("//*[@id='navbar']/div[2]/div[2]/ul/li[12]/a");
+	public By occasion = By.cssSelector("#maSlider > div > div.question.active > div:nth-child(4) > div > div.row.cat1Occasions > div:nth-child(3) > a > div.overlay.overlay-international");
+	
+	
+	
+	
 }

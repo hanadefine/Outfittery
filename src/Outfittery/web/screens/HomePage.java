@@ -33,4 +33,14 @@ public class HomePage extends OutfitteryScreens  {
 	public By userwel=By.xpath("//*[@id='menuLoggedIn']");
 	public By myprofile=By.xpath("//*[@id='navbar']/div[1]/div/ul/li[3]/a/span");	
 	public By welcome=By.xpath("//*[@id=;profileEdit-section']/section/div/div[1]");
+	public By bdyht=By.id("heightInCm");
+	public By weight=By.id("weightInKg"); 
+	public By shirt=By.id("shirtSize");
+	public By jeans=By.id("trousersSizeWidth");
+	public By lth=By.id("trousersSizeLength");
+	public By shoe=By.id("shoeSize");
+	public By savebutton = By.xpath("//*[@id='profileEdit-section']/section/div/div[3]/div/div/a");
+	
+	
+	
 }

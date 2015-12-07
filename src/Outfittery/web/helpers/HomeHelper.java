@@ -54,7 +54,6 @@ HomeHelper hh;
 		int i= (int) (Math.random()*69);
 		hp.findElement(By.id("heightInCm")).click();
         Select selectByValue = new Select(driver.findElement(By.id("heightInCm")));
-        
         selectByValue.selectByIndex(i);
         
 	}
@@ -75,19 +74,38 @@ HomeHelper hh;
 		boolean b = false;
 		b= hp.findElement(hp.radio1).isSelected();
 		if(b=true){  hp.findElement(hp.radio2).click(); }
-		
 		else { hp.findElement(hp.radio1).click(); }
+		
 		
 		/*
 		 * Test to check the clothing sized from drop down menus
 		 */	
 //		WebElement ht = driver.findElement(By.xpath("//*[@id='heightInCm']"));
-		int i= (int) (Math.random()*69);
-        Select selectByValue = new Select(driver.findElement(By.id("heightInCm")));
-        selectByValue.selectByIndex(i);
+		
+		hp.findElement(hp.bdyht).click();
+        Select bdyhight = new Select(hp.findElement(hp.bdyht));
+        bdyhight.selectByIndex(7);
         
-   
-
+        hp.findElement(hp.weight).click();
+        Select weight = new Select(hp.findElement(hp.weight));
+        weight.selectByIndex(7);
+        
+        
+        hp.findElement(hp.shirt).click();
+        Select shirt = new Select(hp.findElement(hp.shirt));
+        shirt.selectByIndex(7);
+        
+        hp.findElement(hp.jeans).click();
+        Select jn = new Select(hp.findElement(hp.jeans));
+        jn.selectByIndex(3);
+        
+        hp.findElement(hp.lth).click();
+        Select jnln = new Select(hp.findElement(hp.lth));
+        jnln.selectByIndex(2);
+ 
+        hp.findElement(hp.shoe).click();
+        Select sh = new Select(hp.findElement(hp.shoe));
+        sh.selectByIndex(3);
     
 	
 	

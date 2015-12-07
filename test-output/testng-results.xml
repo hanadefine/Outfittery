@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="78514" started-at="2015-12-07T10:44:24Z" finished-at="2015-12-07T10:45:43Z">
+  <suite name="Default suite" duration-ms="100027" started-at="2015-12-07T17:36:53Z" finished-at="2015-12-07T17:38:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="78514" started-at="2015-12-07T10:44:24Z" finished-at="2015-12-07T10:45:43Z">
+    <test name="Default test" duration-ms="100027" started-at="2015-12-07T17:36:53Z" finished-at="2015-12-07T17:38:33Z">
       <class name="Outfittery.web.tests.HomePageTest">
-        <test-method status="PASS" signature="createSession()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="createSession" is-config="true" duration-ms="15589" started-at="2015-12-07T16:14:24Z" finished-at="2015-12-07T16:14:40Z">
+        <test-method status="PASS" signature="createSession()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="createSession" is-config="true" duration-ms="18988" started-at="2015-12-07T23:06:53Z" finished-at="2015-12-07T23:07:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createSession -->
-        <test-method status="PASS" signature="instantiateHelpers()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="instantiateHelpers" is-config="true" duration-ms="134" started-at="2015-12-07T16:14:40Z" finished-at="2015-12-07T16:14:40Z">
+        <test-method status="PASS" signature="instantiateHelpers()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="instantiateHelpers" is-config="true" duration-ms="560" started-at="2015-12-07T23:07:12Z" finished-at="2015-12-07T23:07:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instantiateHelpers -->
-        <test-method status="FAIL" signature="logintest()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="logintest" duration-ms="62761" started-at="2015-12-07T16:14:40Z" finished-at="2015-12-07T16:15:43Z">
+        <test-method status="FAIL" signature="logintest()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="logintest" duration-ms="80457" started-at="2015-12-07T23:07:13Z" finished-at="2015-12-07T23:08:33Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Timed out after 10 seconds waiting for visibility of element located by By.xpath: //*[@id=;profileEdit-section']/section/div/div[1]
 Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
-System info: host: 'MBK-TECH-81.local', ip: '192.168.4.182', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11', java.version: '1.8.0_45'
+System info: host: 'MBK-TECH-81.local', ip: '172.20.10.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11', java.version: '1.8.0_45'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 098bbd62-ef27-7c4e-9d76-7a604c46b405]]>
+Session ID: ff324d21-3688-f34f-88cb-e81f045a9db7]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of element located by By.xpath: //*[@id=;profileEdit-section']/section/div/div[1]
 Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
-System info: host: 'MBK-TECH-81.local', ip: '192.168.4.182', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11', java.version: '1.8.0_45'
+System info: host: 'MBK-TECH-81.local', ip: '172.20.10.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11', java.version: '1.8.0_45'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 098bbd62-ef27-7c4e-9d76-7a604c46b405
+Session ID: ff324d21-3688-f34f-88cb-e81f045a9db7
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at UITestFramework.OutfitteryScreens.waitForVisibility(OutfitteryScreens.java:33)
@@ -64,13 +64,13 @@ Session ID: 098bbd62-ef27-7c4e-9d76-7a604c46b405
 Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //*[@id=;profileEdit-section']/section/div/div[1] is either invalid or does not result in a WebElement. The following error occurred:
 InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id=;profileEdit-section']/section/div/div[1] because of the following error:
 SyntaxError: The expression is not a legal expression.
-Command duration or timeout: 131 milliseconds
+Command duration or timeout: 16.55 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
-System info: host: 'MBK-TECH-81.local', ip: '192.168.4.182', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11', java.version: '1.8.0_45'
+System info: host: 'MBK-TECH-81.local', ip: '172.20.10.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11', java.version: '1.8.0_45'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 098bbd62-ef27-7c4e-9d76-7a604c46b405
+Session ID: ff324d21-3688-f34f-88cb-e81f045a9db7
 *** Element info: {Using=xpath, value=//*[@id=;profileEdit-section']/section/div/div[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -94,21 +94,21 @@ InvalidSelectorError: Unable to locate an element with the xpath expression //*[
 SyntaxError: The expression is not a legal expression.
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '2.45.0', revision: '32a636c', time: '2015-03-05 22:01:35'
-System info: host: 'MBK-TECH-81.local', ip: '192.168.4.182', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11', java.version: '1.8.0_45'
+System info: host: 'MBK-TECH-81.local', ip: '172.20.10.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11', java.version: '1.8.0_45'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous2038525515767138191webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10245)
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous2038525515767138191webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10276)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous2038525515767138191webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous2038525515767138191webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous2038525515767138191webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous2038525515767138191webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous1210758978603746452webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10245)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous1210758978603746452webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10276)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous1210758978603746452webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous1210758978603746452webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous1210758978603746452webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous1210758978603746452webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="teardown" is-config="true" duration-ms="1" started-at="2015-12-07T16:15:43Z" finished-at="2015-12-07T16:15:43Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="teardown" is-config="true" duration-ms="0" started-at="2015-12-07T23:08:33Z" finished-at="2015-12-07T23:08:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Outfittery.web.tests.HomePageTest" hash-for-method="logintest">logintest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,9 +116,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">Outfittery.web.tests.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -127,92 +127,14 @@
                   <a name="logintest">
                   </a> <!-- logintest -->
                   <span class="method-name">logintest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of element located by By.xpath: //*[@id=;profileEdit-section&apos;]/section/div/div[1]
-Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
-System info: host: &apos;MBK-TECH-81.local&apos;, ip: &apos;172.20.10.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ff324d21-3688-f34f-88cb-e81f045a9db7
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at UITestFramework.OutfitteryScreens.waitForVisibility(OutfitteryScreens.java:33)
-	at Outfittery.web.helpers.HomeHelper.oderWithoutCall(HomeHelper.java:45)
-	at Outfittery.web.tests.HomePageTest.logintest(HomePageTest.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //*[@id=;profileEdit-section&apos;]/section/div/div[1] is either invalid or does not result in a WebElement. The following error occurred:
-InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id=;profileEdit-section&apos;]/section/div/div[1] because of the following error:
-SyntaxError: The expression is not a legal expression.
-Command duration or timeout: 16.55 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
-System info: host: &apos;MBK-TECH-81.local&apos;, ip: &apos;172.20.10.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ff324d21-3688-f34f-88cb-e81f045a9db7
-*** Element info: {Using=xpath, value=//*[@id=;profileEdit-section&apos;]/section/div/div[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
-	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
-	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 27 more
-Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //*[@id=;profileEdit-section&apos;]/section/div/div[1] is either invalid or does not result in a WebElement. The following error occurred:
-InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id=;profileEdit-section&apos;]/section/div/div[1] because of the following error:
-SyntaxError: The expression is not a legal expression.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
-System info: host: &apos;MBK-TECH-81.local&apos;, ip: &apos;172.20.10.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.annotateInvalidSelectorError_(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous1210758978603746452webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10245)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous1210758978603746452webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10276)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous1210758978603746452webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10280)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous1210758978603746452webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous1210758978603746452webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/anonymous1210758978603746452webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
-
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/testng-eclipse-232611122/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/kq/cl1zyns17cl5x5d_xv8j99q80000gp/T/testng-eclipse--1521755574/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -265,12 +187,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logintest')
 data.setCell(0, 2, 'Outfittery.web.tests.HomePageTest')
-data.setCell(0, 3, 80457);
+data.setCell(0, 3, 48438);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -281,6 +203,15 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">logintest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><Font Color=#008000> PASS </Font>Verifying Profile page</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -303,17 +234,15 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">instantiateHelpers</span>
-                <span class="method-start">18988 ms</span>
+                <span class="method-start">12388 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">logintest</span>
-                <span class="method-start">19548 ms</span>
+                <span class="method-start">12505 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">100011 ms</span>
+                <span class="method-start">60945 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

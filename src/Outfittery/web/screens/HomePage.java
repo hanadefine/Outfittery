@@ -30,17 +30,23 @@ public class HomePage extends OutfitteryScreens  {
 	public By cat=By.xpath("//*[@id='maSlider']/div/div[2]/div[4]/div/div[2]/div[4]/a/div[1]");
 	public By txt1=By.xpath("");
 	public By txt2=By.xpath("//*[@id='maSlider']/div/div[2]/div[4]/div/div[4]/div/textarea");
-	public By userwel=By.xpath("//*[@id='menuLoggedIn']");
+	public By myprofiletab=By.xpath("/html/body/span/div/nav/div/div/div/ul/li[3]/a/span");
 	public By myprofile=By.xpath("//*[@id='navbar']/div[1]/div/ul/li[3]/a/span");	
-	public By welcome=By.xpath("//*[@id=;profileEdit-section']/section/div/div[1]");
+	public By welcome=By.xpath("//*[@id='profileEdit-section']/section/div/div[1]");
 	public By bdyht=By.id("heightInCm");
 	public By weight=By.id("weightInKg"); 
 	public By shirt=By.id("shirtSize");
 	public By jeans=By.id("trousersSizeWidth");
 	public By lth=By.id("trousersSizeLength");
 	public By shoe=By.id("shoeSize");
-	public By savebutton = By.xpath("//*[@id='profileEdit-section']/section/div/div[3]/div/div/a");
-	
-	
+	public By fnm = By.name("firstName");
+	public By lnm = By.name("lastName");
+	public By savename = By.name("Save data");
+	public By pwd=By.id("password");
+	public By nwpwd=By.id("newPassword");
+	public By rppwd=By.id("repeatPassword");
+	public By savepwd = By.name("Save password");
+	public By savesize = By.xpath("//*[@id='profileEdit-section']/section/div/div[3]/div/div/a");
+	public By savepopup = By.xpath("//*[@id='alertModal']/div/div/button");
 	
 }

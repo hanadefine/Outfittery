@@ -14,6 +14,7 @@ public class HomePageTest extends CreateSession{
 	String email;
 	String password;
 	String baseUrl;
+	String fname,lname;
 	
 	@BeforeMethod(alwaysRun = true)
 	public void instantiateHelpers(){
@@ -28,8 +29,9 @@ public class HomePageTest extends CreateSession{
 	@Test(priority=0)
 	public void logintest() throws InterruptedException, TimeoutException
 	{
+	    driver.manage().window().maximize();
 		homeHelper.login(email, password);
-		homeHelper.oderWithoutCall();
+		homeHelper.profileupdate(fname,lname);
 		//homeHelper.profile();
 		
 	}
